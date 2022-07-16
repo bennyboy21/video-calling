@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+body {
+  font-family: 'Syne Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  background: rgb(20, 20, 20);
+  margin:0px;
+}
+
+@media (min-width:500px) {
+  #your-Video-Holder {
+    width:250px;
+    height: 175px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border-radius: 5px;
+  }
+
+  #opponent-Video-Holder {
+    background: black;
+    width:250px;
+    height: 175px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 195px;
+    left: 10px;
+    border-radius: 5px;
+  }
+
+  video {
+    width:100%;
+    border: none;
+  }
+
+  /* .videos {
+    position: absolute;
+    top:50%;
+    transform: translate(0px, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }*/
+}
+
+@media (max-width:500px) {
+  video {
+    width: 100vw;
+    height: fit-content;
+    border: 0px;
+    margin: 0px;
+    background: #2c3e50;
+  }
+
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* 
+#webcamVideo {
+  width:100vw;
+  height: fit-content;
+} */
